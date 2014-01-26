@@ -9,6 +9,8 @@ lib-cov
 *.mp4
 *.flv
 .idea
+settings.coffee
+settings.js
 pids
 logs
 results

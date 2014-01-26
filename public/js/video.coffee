@@ -58,7 +58,7 @@ $(window).on 'resize', (e) ->
 
 # connect to server
 
-socket = io.connect('http://192.168.200.162:3000/video')
+socket = io.connect('/video')
 
 socket.on 'connected', () ->
   socket.emit 'connected', {id: vid}

@@ -82,7 +82,7 @@
     return winResize(e);
   });
 
-  socket = io.connect('http://192.168.200.162:3000/video');
+  socket = io.connect('/video');
 
   socket.on('connected', function() {
     return socket.emit('connected', {
