@@ -29,14 +29,14 @@
 运行
 ===
 - 启动app
- ```coffeescript
+ ```
     node app.js
  ```
 - 先访问以下地址安装数据库
- ```coffeescript
+ ```
  http://localhost:3000/install
  ```
 - 访问
- ```coffeescript
+ ```
  http://localhost:3000/
  ```
