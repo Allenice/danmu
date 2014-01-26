@@ -1,0 +1,18 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <ul class="row video-list">
+        {% for video in videos %}
+            <li class="col-sm-3">
+                <a href="/video/av/{{ video.id }}" target="_blank"><img class="img-thumbnail" src="/video/thumbnail/{{ video.poster }}" alt="封面"/></a>
+                <div class="detail">
+                    <div>剧名： <a href="/video/av/{{ video.id }}" title="{{ video.name }}" target="_blank">{{ video.name }}</a></div>
+                    <div>时长：{{ video.duration }}</div>
+                    <div>播放次数：{{ video.play_count }}</div>
+                    <div>弹幕数：{{ video.barrage_count }}</div>
+                    <div>上传时间：{{ video.time }}</div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <header class="navbar navbar-static-top">
+        <div class="container">
+            <div class="logo"><img src="/img/logo.png" alt="logo"/><a href="/video">CFEC-VIDEO</a></div>
+            <div class="link"><a href="{{ navAction.url }}">{{ navAction.text }}</a></div>
+        </div>
+    </header>
+    <div id="container" class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <script type="text/javascript" src="/lib/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    {% block footer %}
+    {% endblock %}
+</body>
+</html>

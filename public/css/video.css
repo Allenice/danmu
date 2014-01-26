@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+#video {
+  position: relative;
+  z-index: 100;
+  width: 600px;
+  height: 400px;
+  float: left;
+}
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: #FFF;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  z-index: 2147483648;
+}

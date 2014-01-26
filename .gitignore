@@ -6,11 +6,15 @@ lib-cov
 *.out
 *.pid
 *.gz
+*.mp4
+*.flv
 .idea
-
 pids
 logs
 results
+test
+uploads/thumb/*.jpg
+
 
 npm-debug.log
 node_modules

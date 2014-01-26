@@ -1,0 +1,124 @@
+@padding: 10px;
+@margin: 10px 0;
+@nav-height: 60px;
+@main-font: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+
+.mt10 {margin-top: 10px;}
+.mt150 {margin-top: 150px;}
+
+body{padding: 0; margin: 0; font-family:@main-font;  background-color: #f8f8f8;}
+.messages {height: 300px; border: 1px solid #CCC; overflow: hidden; overflow-y: auto; margin: @margin;}
+.navbar {
+  background-color: #1b76b5;
+  .container{
+    height: @nav-height;
+    line-height: @nav-height;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      text-shadow: 1px 1px 5px #333;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+    .logo{
+      display: inline-block;
+      img {
+        height: @nav-height;
+        width: @nav-height;
+        margin-top: -20px;
+      }
+      a{
+        display: inline-block;
+        font-size: 28px;
+        padding-left: 5px;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+    .link {
+      display: inline-block;
+      float: right;
+      a{
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+.add-video {
+  margin-top: 50px;
+  .progress {
+    height: 15px;
+    margin-top: 10px;
+    .progress-bar {
+      line-height: 15px;
+    }
+  }
+}
+
+.video-list{
+  margin-top: 20px;
+  list-style: none;
+  font-size: 12px;
+  .detail{
+    padding: 10px;
+    div {
+      line-height: 1.5em;
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.video-js {
+  margin: 0 auto;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#info{
+  font-size: 12px;
+  .panel-heading {
+    overflow: hidden;
+  }
+  .list-group{
+    padding: 0;
+    .list-group-item{
+      padding: 0 10px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+#video{
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: @main-font;
+  .barrage {
+    white-space: nowrap;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #000;
+    position: absolute;
+    color: #fff;
+    left: 100%;
+    top: 0;
+    display: inline-block;
+    z-index: 2147483648;
+  }
+}
+
+#video.vjs-fullscreen {
+  position: fixed;
+  .barrage {
+    font-size: 24px;
+  }
+}

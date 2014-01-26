@@ -1,0 +1,16 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.7",
+    "twig": ">= 0.6.0",
+    "socket.io": ">= 0.9.16",
+    "mongodb": ">= 0.9.9",
+    "fluent-ffmpeg": ">=1.5.2",
+    "moment": "*"
+  }
+}
