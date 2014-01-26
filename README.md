@@ -29,7 +29,7 @@
 运行
 ===
 - 启动app
- ```shell
+ ```coffeescript
     node app.js
  ```
 - 先访问以下地址安装数据库
