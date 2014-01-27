@@ -11,6 +11,8 @@ lib-cov
 .idea
 settings.coffee
 settings.js
+config.coffee
+config.js
 pids
 logs
 results
