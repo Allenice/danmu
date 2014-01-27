@@ -1,4 +1,4 @@
-settings = require '../settings'
+settings = require '../config'
 mongo = require('mongodb');
 
 mongoDb = new mongo.Db(settings.db, new mongo.Server(settings.host, mongo.Connection.DEFAULT_PORT, {}))

@@ -6,7 +6,7 @@
 
   fs = require('fs');
 
-  settings = require('../settings');
+  settings = require('../config');
 
   Video = require('../model/Video');
 

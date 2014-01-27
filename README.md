@@ -10,7 +10,7 @@
 
 - 设置ffmpeg的执行路径和数据库
   ```coffeescript
-    # settings.coffee
+    # config.coffee
     module.exports = {
       cookieSecret: 'socket.io',
       db: 'danmu',
@@ -30,13 +30,16 @@
 ===
 - 启动app
  ```
+    # shell or cmd
     node app.js
  ```
 - 先访问以下地址安装数据库
  ```
+ #
  http://localhost:3000/install
  ```
 - 访问
  ```
+ #
  http://localhost:3000/
  ```

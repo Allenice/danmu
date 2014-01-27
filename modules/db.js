@@ -2,7 +2,7 @@
 (function() {
   var mongo, mongoDb, settings;
 
-  settings = require('../settings');
+  settings = require('../config');
 
   mongo = require('mongodb');
 

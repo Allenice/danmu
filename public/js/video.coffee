@@ -26,19 +26,27 @@ videojs.options.flash.swf = '/lib/videojs/video-js.swf'
 
 videoPlayer = videojs 'video'
 preTime = 0
+flag = 0
+top = 0
 
 videoPlayer.on 'timeupdate', (e)->
   curTime = parseInt(videoPlayer.currentTime())
   if curTime == preTime
     return
-  top = 0
+
   for barrage in barrages
     if barrage.duration == curTime
       $item = $('<div class="barrage">'+barrage.content+'</div>')
       $item.appendTo($("#video"))
       $item.css {'top': top+'px'}
+
       top = top + 30
-      $item.animate({'left': '-100%'}, 15000, ()->
+      flag++
+      if flag>5
+        flag = 0
+        top = 0
+
+      $item.animate({'left': '-50%'}, 15000, 'linear', ()->
         $(this).remove()
       )
   preTime = curTime

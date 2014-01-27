@@ -2,7 +2,7 @@
 # video controller
 os_path = require 'path'
 fs = require 'fs'
-settings = require '../settings'
+settings = require '../config'
 Video = require '../model/Video'
 util = require '../modules/util'
 escape = require 'escape-html'
