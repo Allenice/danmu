@@ -119,6 +119,7 @@
           proc = new ffmpeg({
             source: videoPath
           });
+          proc.setFfmpegPath(settings.ffmpegPath);
           return proc.withSize('150x150').takeScreenshots({
             count: 1,
             timemarks: ['10%'],
