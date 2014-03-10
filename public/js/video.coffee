@@ -86,7 +86,7 @@ window.onbeforeunload = (e) ->
   return
 
 $barrage.find('input').keyup (e) ->
-  if e.keyCode == 13
+  if e.keyCode == 13 && $.trim($(this).val())
     barrage = $(this).val()
     $(this).val('')
     socket.emit 'barrage'+vid, {duration: parseInt(videoPlayer.currentTime() + 1), content:barrage}

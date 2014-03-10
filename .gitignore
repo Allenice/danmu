@@ -8,6 +8,7 @@ lib-cov
 *.gz
 *.mp4
 *.flv
+*.map
 .idea
 settings.coffee
 settings.js
