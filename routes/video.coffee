@@ -83,6 +83,7 @@ module.exports = (app) ->
         video = {path: path, format: format, time: time}
 
         proc = new ffmpeg {source: videoPath}
+        proc.setFfmpegPath settings.ffmpegPath
         proc.withSize('150x150').takeScreenshots {count:1, timemarks: ['10%'], filename: '%f_thumb_%wx%h_%i'}, thumbPath, (err, fileName) ->
           if !err
             video.poster = fileName
