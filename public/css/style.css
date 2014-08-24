@@ -34,6 +34,7 @@ body {
   text-decoration: underline;
 }
 .navbar .container .logo {
+  float: left;
   display: inline-block;
 }
 .navbar .container .logo img {

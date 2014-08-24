@@ -81,9 +81,6 @@ socket.on 'barrage'+vid, (barrage)->
   $info.find('.list-group').prepend($li)
   $('#c-count').text(barrages.length)
 
-window.onbeforeunload = (e) ->
-  socket.emit 'disconnected'+vid
-  return
 
 $barrage.find('input').keyup (e) ->
   if e.keyCode == 13
